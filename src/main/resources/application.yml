@@ -1,0 +1,36 @@
+server:
+  port: ${port:5000}
+
+spring:
+  application:
+    name: Prueba Bahia
+
+springdoc:
+  swagger-ui:
+    path: '/swagger-ui.html'
+
+springfox:
+  documentation:
+    swagger:
+      use-model-v3: false
+
+feign:
+  client:
+    config:
+      default:
+        connectTimeout: 60000
+        readTimeout: 60000
+        loggerLevel: basic
+resilience4j:
+  circuitbreaker:
+    instances:
+      ProductMocksClientgetProduct:
+        minimumNumberOfCalls: 1
+  timelimiter:
+    instances:
+      ProductMocksClientgetProduct:
+        timeoutDuration: 60s
+
+logging:
+  level:
+    org.springframework.web: DEBUG

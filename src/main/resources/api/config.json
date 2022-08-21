@@ -1,0 +1,9 @@
+{
+  "modelPackage": "com.prueba.bahia.model",
+  "apiPackage": "com.prueba.bahia.api",
+  "dateLibrary": "java11",
+  "useBeanValidation": true,
+  "interfaceOnly": true,
+  "useOptional": true,
+  "library": "spring-boot"
+}
