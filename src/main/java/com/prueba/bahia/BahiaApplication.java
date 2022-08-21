@@ -25,6 +25,9 @@ public class BahiaApplication {
 	 * se devuelvan solo los que han ido bien. No mando ningún error ya que en el contrato no he visto ninguna definición
 	 * para los errores de haberlo habido hubiera usado un @ControllerAdvice para la gestion de excepciones
 	 *
+	 * No he implementado test unitarios ya que en el readme dice que los test ya se incluyen con la prueba. Normalemente
+	 * uso Junit5 y Mockito para la realización de test
+	 *
 	 * PROBLEMAS
 	 * No he podido lanzar los test ya que me da el siguiente error al lanzarlos: "The moduleSpecifier "scripts/test.js"
 	 * couldn't be found on local disk". Lo he probado manualmente y funciona bien, con la excepción de los productos
