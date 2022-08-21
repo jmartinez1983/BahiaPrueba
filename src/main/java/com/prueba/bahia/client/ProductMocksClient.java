@@ -1,6 +1,5 @@
 package com.prueba.bahia.client;
 
-import com.prueba.bahia.domain.ProductDetails;
 import com.prueba.bahia.model.InlineResponse200;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.PathVariable;
